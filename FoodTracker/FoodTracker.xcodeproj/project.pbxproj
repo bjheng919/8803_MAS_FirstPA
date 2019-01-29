@@ -15,6 +15,8 @@
 		696283C721FCC8A0001FB82F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 696283C621FCC8A0001FB82F /* Assets.xcassets */; };
 		696283CA21FCC8A0001FB82F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696283C821FCC8A0001FB82F /* LaunchScreen.storyboard */; };
 		696283D521FCC8A0001FB82F /* FoodTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696283D421FCC8A0001FB82F /* FoodTrackerTests.swift */; };
+		69A2440921FFF00500AB1A7A /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A2440821FFF00500AB1A7A /* Meal.swift */; };
+		69C113D921FFDF3900CF81B2 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C113D821FFDF3900CF81B2 /* RatingControl.swift */; };
 		76C33EFB5B64A6CFB671F453 /* Pods_FoodTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7065723E8E4F479A3C4AE811 /* Pods_FoodTrackerTests.framework */; };
 		825C514FD1C9651F9BD4ABFA /* Pods_FoodTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A4509D869868CB7B6D320D /* Pods_FoodTracker.framework */; };
 /* End PBXBuildFile section */
@@ -42,7 +44,9 @@
 		696283D021FCC8A0001FB82F /* FoodTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		696283D421FCC8A0001FB82F /* FoodTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTrackerTests.swift; sourceTree = "<group>"; };
 		696283D621FCC8A0001FB82F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69A2440821FFF00500AB1A7A /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		69ADB7F821FCEB9B00FC34FB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		69C113D821FFDF3900CF81B2 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		7065723E8E4F479A3C4AE811 /* Pods_FoodTrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodTrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A077878F4FFFE004649D399 /* Pods-FoodTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodTracker/Pods-FoodTracker.debug.xcconfig"; sourceTree = "<group>"; };
 		94F5B4D463A92E0CDBE3573F /* Pods-FoodTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTrackerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodTrackerTests/Pods-FoodTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +99,8 @@
 				696283BF21FCC89F001FB82F /* AppDelegate.swift */,
 				696283C121FCC89F001FB82F /* ViewController.swift */,
 				696283C321FCC89F001FB82F /* Main.storyboard */,
+				69A2440821FFF00500AB1A7A /* Meal.swift */,
+				69C113D821FFDF3900CF81B2 /* RatingControl.swift */,
 				696283C621FCC8A0001FB82F /* Assets.xcassets */,
 				696283C821FCC8A0001FB82F /* LaunchScreen.storyboard */,
 				696283CB21FCC8A0001FB82F /* Info.plist */,
@@ -309,7 +315,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69A2440921FFF00500AB1A7A /* Meal.swift in Sources */,
 				696283C221FCC89F001FB82F /* ViewController.swift in Sources */,
+				69C113D921FFDF3900CF81B2 /* RatingControl.swift in Sources */,
 				696283C021FCC89F001FB82F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -515,6 +523,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MXLMVLP5J3;
 				INFOPLIST_FILE = FoodTrackerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -536,6 +545,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MXLMVLP5J3;
 				INFOPLIST_FILE = FoodTrackerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
