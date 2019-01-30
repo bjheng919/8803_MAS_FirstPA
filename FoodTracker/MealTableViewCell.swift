@@ -2,19 +2,19 @@
 //  MealTableViewCell.swift
 //  FoodTracker
 //
-//  Created by Xiangqi Liu on 1/29/19.
+//  Created by Jiuheng Ji on 2019/1/30.
 //  Copyright © 2019 Apple Inc. All rights reserved.
 //
 
 import UIKit
 
 class MealTableViewCell: UITableViewCell {
-    
     //MARK: Properties
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var ratingControl: RatingControl!
     
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
