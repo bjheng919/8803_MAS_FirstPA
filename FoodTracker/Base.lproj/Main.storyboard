@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0r0-La-V6F">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="x29-OD-d1t">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -142,6 +142,51 @@
             </objects>
             <point key="canvasLocation" x="2024.8" y="136.69950738916256"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="tKW-Ko-sw8">
+            <objects>
+                <viewController id="x29-OD-d1t" customClass="LoginViewController" customModule="FoodTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rln-tQ-F3J"/>
+                        <viewControllerLayoutGuide type="bottom" id="AVC-iK-GqH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dM9-EX-VDT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="mNv-3u-HGC">
+                                <rect key="frame" x="97.333333333333329" y="361" width="180.66666666666669" height="90.333333333333314"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Firebase Authentication" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LtC-wl-oYJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="180.66666666666666" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQo-KW-lte">
+                                        <rect key="frame" x="71.333333333333329" y="60.333333333333314" width="38" height="30"/>
+                                        <state key="normal" title="Login"/>
+                                        <connections>
+                                            <action selector="loginPressed:" destination="x29-OD-d1t" eventType="touchUpInside" id="bDE-y1-1fD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mNv-3u-HGC" firstAttribute="centerY" secondItem="dM9-EX-VDT" secondAttribute="centerY" id="OwQ-FP-T6D"/>
+                            <constraint firstItem="mNv-3u-HGC" firstAttribute="centerX" secondItem="dM9-EX-VDT" secondAttribute="centerX" id="itM-1u-uz2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="0r0-La-V6F" kind="presentation" identifier="loginSuccess" id="myr-gf-LUk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qfk-9S-7gB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1366" y="137"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="IJ3-N4-Y7b">
             <objects>
@@ -158,7 +203,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="saa-bR-LIU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-620" y="136.69950738916256"/>
+            <point key="canvasLocation" x="-534" y="491"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HFk-Lz-HXC">
@@ -176,7 +221,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hCx-Dl-z0j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1140" y="491"/>
+            <point key="canvasLocation" x="1169" y="491"/>
         </scene>
     </scenes>
     <resources>
